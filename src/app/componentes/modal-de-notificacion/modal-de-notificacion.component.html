@@ -1,0 +1,46 @@
+<div class="modal-content">
+
+    <div class="modal-header"></div>
+
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12 text-center mb-4" >
+                @if(type == 'success'){
+                <img src="assets/images/imagen-notificacion.svg" alt="Notificacion" class="icon" />
+                }
+                @else if(type == 'info' || type == 'html'){
+                <img src="assets/images/notificacion.svg" alt="Notificacion" class="icon" />
+                }
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                @if(type == 'info' || type == 'success'){
+                    <span class="texto-uno">{{message}}</span>
+                }
+                @else if(type == 'html'){
+                    <span  [innerHTML]="message"></span>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <div class="row" *ngIf="proceso_confirmacion">
+            <div class="col-md-6 col-12">
+                <button (click)="onConfirm(false)" class="btn button-cancelar bs-btn" >Cancelar</button>
+
+            </div>
+            <div class="col-md-6 col-12">
+                <button (click)="onConfirm(true)" class="btn button-confirmacion bs-btn" >Asignar</button>
+
+            </div>
+        </div>
+
+        <div class="row" *ngIf="!proceso_confirmacion">
+            <button (click)="onConfirm(true)" class="btn button-confirmacion bs-btn" >Continuar</button>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar_encabezado navbar-light bg-light size-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo-interrapidisimo-main.svg" alt="Logo Interrapidisimo"/>
+      </a>
+      <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" aria-controls="navbarSupportedContent" aria-expanded="!isCollapsed" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div [ngbCollapse]="isCollapsed" class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle user-profile" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <!-- <img class="user-icon" src="assets/images/user-white.svg" alt=""/> -->
+              <img class="user-icon" src="assets/images/user-white.svg" alt=""/>
+              <span class="nombreUsuario">{{usuario.UserID}} </span>
+            </a>
+
+            <a class="nav-link user-profile text-center nav-link-centro">
+              <span *ngIf="centro_seleccionado_tamano > 1" class="text-centro">{{centro_seleccionado}}</span>
+              <span *ngIf="centro_seleccionado_tamano == 1" class="text-centro-largo" [attr.title]="centro_seleccionado">{{centro_seleccionado}}</span>
+            </a>
+            
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <!-- <li><a class="dropdown-item"  [routerLink]="['/pages/Parametros']">Parametros</a></li> -->
+              <li><a class="dropdown-item" (click)="cerrarSesion()">Cerrar sesión</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+  

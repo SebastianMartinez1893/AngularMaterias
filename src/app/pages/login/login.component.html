@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <div class="row align-items-center bs-login alt-bslogin">
+      <div class="col-md-6 d-none d-lg-block loginImage"></div>
+      <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 pt-5">
+        <div class="form-login-content">
+          <div class="login-title">
+            <h1>Bienvenido a nuestro portal</h1>
+            <p>Ingresa a tu cuenta con tus datos</p>
+          </div>
+          <div class="content-input whit-icon input-login">
+            <label for="usernameLogin" class="form-label"> Usuario 
+            </label>
+            <div class="input-group">
+              
+              <input [(ngModel)]="text_email" type="text" id="usernameLogin" placeholder="Usuario" class="form-control">
+            </div>
+          </div>
+          <div class="content-input whit-icon input-login">
+            <label for="passwordLogin" class="form-label"> Contraseña </label>
+            <div class="input-group">
+              <input  [(ngModel)]="text_pass"  type="password" id="passwordLogin" placeholder="Contraseña" class="form-control">
+            </div>
+          </div>
+          <div class="action mt-3">
+            <button
+
+             class="btn  bs-btn w-100"
+             [ngClass]="{
+              'button-login ': text_email.length > 0 && text_pass.length > 0,
+              'button-login-disabled':text_email.length === 0 || text_pass.length === 0
+              }"
+             id="botonLogin" [disabled]="text_email.length === 0 || text_pass.length === 0" 
+             (click)="IngresoUsuario()"> Ingresar </button>
+          </div>
+          <div class="action mt-1 text-center">
+             <a  [routerLink]="['../Registro']">Registrate Aquí</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

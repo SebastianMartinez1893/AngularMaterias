@@ -1,1 +1,1958 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap');
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+body {
+    background-color: #F3F4F9 !important;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 2.3rem;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 17.07px;
+    font-weight: 500;
+    color: #607697;
+}
+
+.form-control {
+    box-shadow: 1px 4px 6px #C4C5C7;
+}
+
+.form-select {
+    box-shadow: 1px 4px 6px #C4C5C7;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+h3 {
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 26px !important;
+}
+
+.titulo {
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    font-family: 'Montserrat', sans-serif !important;
+    line-height: 29.26px !important;
+    color: #112350;
+}
+
+.titlo_span {
+    margin-right: 10%;
+    line-height: 19.5px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #112350;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.btn-primary {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.texto-guias-naranja {
+    color: #e76100;
+    font-weight: 700;
+}
+
+.button {
+    margin: 0.2rem;
+    box-shadow: inset 0 1px 0 0 #fff;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #000000 !important;
+    background-color: #EEF2FB;
+    font-size: 15px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+    outline: 0;
+}
+
+div .navbar-toggler {
+    border-color: #000 !important;
+    color: #fff !important;
+    background-color: #fff !important;
+}
+
+.navbar_encabezado {
+    background: #1A1731 !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ml-auto {
+    margin-left: auto !important
+}
+
+.user-profile img {
+    width: 38px;
+    height: 35px;
+    margin: 0.5rem;
+    padding: 0.3rem;
+    justify-content: space-between;
+
+}
+
+li a {
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.size-navbar {
+    margin-bottom: 1rem;
+    max-height: 0, 4rem;
+    max-width: 100%;
+}
+
+.breadcrumbs-activos {
+    color: #000 !important;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+    font-style: none;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.breadcrumbs-inicial {
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-style: none;
+    word-wrap: break-word;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.breadcrumbs-noactivos {
+    color: #E76100;
+    font-size: 1em !important;
+    font-weight: 400;
+    font-style: none;
+    word-wrap: break-word;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.card-body {
+    padding-top: 2em !important;
+}
+
+.btn-primary-card {
+    width: 70%;
+    height: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #E76100;
+    border-color: #E76100;
+    color: #fff;
+    border-radius: 24px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.btn-secondary-card {
+    width: 70%;
+    height: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #B6CDE2;
+    border-color: #B6CDE2;
+    color: #fff;
+    border-radius: 24px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.btn-primary {
+    width: 35%;
+    height: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #E76100;
+    border-color: #E76100;
+    color: #fff;
+    border-radius: 24px;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-secondary {
+    width: 35%;
+    height: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #B6CDE2;
+    border-color: #B6CDE2;
+    color: #fff;
+    border-radius: 24px;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn {
+    color: #fff !important;
+    background: #B6CDE2 !important;
+    border-color: #B6CDE2 !important;
+}
+
+.btn-primary:hover {
+    background: #E76100 !important;
+    border-color: #E76100 !important;
+    color: #fff !important;
+}
+
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background: #E76100 !important;
+    border-color: #E76100 !important;
+    color: #fff !important;
+}
+
+.btn:hover {
+    background: #E76100 !important;
+    border-color: #E76100 !important;
+    color: #fff !important;
+}
+
+.btn:focus-visible {
+    background: #E76100 !important;
+    border-color: #E76100 !important;
+    color: #fff !important;
+}
+
+.container-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.container-4 input#search {
+    width: 50%;
+    height: 42px;
+    background: #fff;
+    border-color: #B6CDE2;
+    float: left;
+    color: #B6CDE2;
+    font-size: 16px;
+    padding-left: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 25px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-activo {
+    color: #112350 !important;
+    font-size: 20px !important;
+    line-height: 27px !important;
+    font-style: 'Montserrat', sans-serif;
+}
+
+input::placeholder {
+    color: #B6CDE2 !important;
+    /* Cambia el color del placeholder */
+    font-size: 14px;
+    /* Cambia el tamaño de fuente */
+    font-style: 'Montserrat', sans-serif;
+    /* Cambia el estilo de la fuente */
+}
+
+textarea::placeholder {
+    color: #607697 !important;
+    /* Cambia el color del placeholder */
+    font-size: 14px;
+    /* Cambia el tamaño de fuente */
+    font-style: 'Montserrat', sans-serif;
+    /* Cambia el estilo de la fuente */
+    line-height: 24px !important;
+    font-weight: 400 !important;
+}
+
+
+::ng-deep ngx-mat-select-search .mat-form-field-infix input::placeholder {
+    color: #B6CDE2 !important;
+    /* Cambia el color del placeholder */
+    font-size: 14px;
+    /* Cambia el tamaño de fuente */
+    font-family: 'Montserrat', sans-serif;
+    /* Cambia el estilo de la fuente */
+}
+
+.mat-mdc-select-placeholder {
+    color: #B6CDE2 !important;
+    /* Cambia el color del placeholder */
+    font-size: 14px;
+    /* Cambia el tamaño de fuente */
+    font-family: 'Montserrat', sans-serif;
+    /* Cambia el estilo de la fuente */
+}
+
+.text-no-activo {
+    color: #B6CDE2 !important;
+    font-size: 14px;
+    line-height: 27.07px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.nav-link span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 18.29px;
+    font-weight: 400;
+    color: #1A1731;
+}
+
+.modal-footer {
+    text-align: center;
+    justify-content: center;
+}
+
+/*
+Estilos para el paginado inicio
+*/
+
+.ngx-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.ngx-pagination li {
+    width: 35px;
+    height: 35px;
+    border-radius: 50% !important;
+    background: #f8f8f8;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ngx-pagination li a {
+    color: #000 !important;
+}
+
+.ngx-pagination .pagination-previous span,
+.pagination-next span {
+    width: 100px;
+    height: 100px;
+    border-radius: 50% !important;
+    overflow: hidden;
+    color: #f8f8f8;
+}
+
+.ngx-pagination .small-screen {
+    display: none !important;
+}
+
+.ngx-pagination .pagination-previous a::before,
+.ngx-pagination .pagination-previous .disabled::before,
+.ngx-pagination .pagination-next::before {
+    margin-right: 0px !important;
+    font-size: 26px;
+    margin-top: -8px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /*border: 1px solid red;*/
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    color: #F87C22 !important;
+    left: 0px;
+    pointer-events: none;
+}
+
+.mat-mdc-paginator {
+    background-color: #F3F4F9 !important;
+}
+
+.mat-mdc-paginator-navigation-previous svg,
+.mat-mdc-paginator-navigation-next svg {
+    fill: #F87C22 !important;
+    border: 1px solid #F87C22;
+    border-radius: 50%;
+}
+
+.mat-mdc-icon-button[disabled] svg {
+    border: 1px solid #B6CDE2;
+    border-radius: 50%;
+    fill: #B6CDE2 !important;
+}
+
+.ngx-pagination .pagination-next::before {
+    content: '\bb';
+}
+
+.ngx-pagination .pagination-next::after {
+    display: none !important;
+}
+
+.ngx-pagination .pagination-previous .disabled::before {
+    opacity: 0.4;
+}
+
+.ngx-pagination .pagination-previous .disabled:hover {
+    background: #f8f8f8;
+}
+
+.ngx-pagination a:hover,
+.ngx-pagination button:hover {
+    background: initial !important;
+}
+
+.ngx-pagination .current {
+    background: #F87C22 !important;
+    color: #000 !important;
+}
+
+.ngx-pagination .pagination-previous,
+.ngx-pagination .pagination-next {
+    visibility: hidden;
+}
+
+.ngx-pagination .pagination-previous::before,
+.ngx-pagination .pagination-next::before {
+    visibility: visible;
+    font-size: 26px;
+    /* Ajusta este valor según tus necesidades */
+}
+
+.ngx-pagination::before,
+.ngx-pagination::after {
+    content: "";
+    flex: 1;
+}
+
+.ngx-pagination .pagination-previous::before {
+    content: '<<';
+}
+
+.ngx-pagination .pagination-next::before {
+    content: '>>';
+}
+
+/*Fin*/
+
+/*Inicio stylos de table*/
+.table-responsive {
+    display: block;
+}
+
+.table-responsive>.table tbody tr td {
+    padding: 1px 5px !important;
+    text-align: left;
+    white-space: normal;
+}
+
+.td-text {
+    color: #112350;
+    font-weight: 500;
+    text-align: left;
+    font-size: 12px;
+    line-height: 22px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+.table-responsive>.table tbody tr td:nth-child(2) a {
+    margin-top: 3px;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.table-responsive>.table tbody tr td:first-child {
+    padding-right: 0 !important;
+}
+
+.table-responsive>.table tbody tr td .box input {
+    margin: 5px 0 !important;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd),
+.table-responsive>.table tbody tr:first-child {
+    background-color: #FCFFFF !important;
+}
+
+
+.table-responsive>.table>tbody>tr>td:nth-child(5),
+.table-responsive>.table>tbody>tr>td:nth-child(6) {
+    text-align: center;
+    width: auto;
+}
+
+.table-responsive>.table>tbody>tr>td:nth-child(7),
+.table-responsive>.table>tbody>tr>td:nth-child(8),
+.table-responsive>.table>tbody>tr>td:nth-child(9) {
+    text-align: right;
+    width: auto;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-responsive>.table-bordered {
+    border: 0;
+}
+
+.content-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 25px 0;
+    font-size: 0.9em;
+    width: 100% !important;
+    overflow: hidden;
+}
+
+.content-table thead tr {
+    background-color: #607697;
+    color: #fff;
+    font-weight: 500;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    color: #000;
+}
+
+.content-table tbody tr.divider-row {
+    height: 2px;
+    /* Ajusta el grosor de la línea divisora */
+    background: #000;
+    /* Color de la línea divisora */
+    border: none;
+}
+
+.content-table tbody tr a {
+    text-decoration: none;
+    color: black !important;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+table thead tr th {
+    font-weight: 500;
+    font-size: 15px !important;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #fff;
+}
+
+.row-divider {
+    border-bottom: 2px solid #EEF2FB !important;
+    /* Cambia el color y el grosor según prefieras */
+}
+
+.content-table tbody tr td input[type="checkbox"]:checked~.lbl-switch {
+    background: #F87C22;
+}
+
+.content-table tbody tr td input[type="checkbox"]:checked~.lbl-switch:after {
+    left: 32px;
+}
+
+.content-table tbody tr td input[type="checkbox"] {
+    display: none;
+}
+
+/*Fin*/
+
+.download-option {
+    text-align: center;
+}
+
+.download-option a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-option img {
+    margin-right: 5px;
+}
+
+.checkbox_confirmacion {
+    width: 20px;
+    height: 40px;
+    display: block !important;
+}
+
+.margin-left-cards {
+    margin-left: 30px;
+}
+
+/*Inicio select*/
+::ng-deep .cdk-overlay-container {
+    z-index: 9999 !important;
+    overflow-y: hidden;
+
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before {
+    background-color: white;
+    overflow-y: hidden;
+
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before {
+    border-bottom-color: white;
+    overflow-y: hidden;
+
+}
+
+.mdc-text-field--filled.mdc-text-field--disabled {
+    background-color: var(--bs-secondary-bg) !important;
+    opacity: 1 !important;
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: transparent !important;
+    border: 1px solid #B6CDE2;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    overflow-y: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 450;
+
+}
+
+
+::ng-deep .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
+    color: black !important;
+    border: 2rem;
+    font-weight: 450;
+    overflow-y: hidden;
+
+}
+
+::ng-deep .mat-primary .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-minimal::after,
+.mat-primary .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-minimal::after {
+    color: transparent !important;
+    font-weight: 500;
+    align-items: left;
+    overflow-y: hidden;
+
+
+}
+
+::ng-deep .mat-mdc-form-field.mat-focused .mat-mdc-select-arrow {
+    color: #B6CDE2 !important;
+    overflow-y: hidden;
+
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-floating-label,
+.mdc-text-field--filled:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-floating-label--float-above {
+    color: black !important;
+    overflow-y: hidden;
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after {
+    color: black !important;
+    overflow-y: hidden;
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after {
+    border-bottom-color: #F87C22 !important;
+    overflow-y: hidden;
+
+}
+
+.mat-select {
+    width: 100% !important;
+    color: #607697;
+    overflow-x: hidden !important;
+
+}
+
+.input-select {
+    width: 80% !important;
+    overflow-y: hidden;
+}
+
+::ng-deep .mat-primary .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-full,
+.mat-primary .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-full {
+    background: #F87C22 !important;
+    overflow-y: hidden;
+
+}
+
+::ng-deep .mat-mdc-option {
+    border: 10px;
+    overflow-y: hidden;
+
+}
+
+::ng-deep .div.mat-mdc-select-panel .mat-mdc-option {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 450;
+    border: #1A1731;
+    overflow-y: hidden;
+    color: #B6CDE2 !important;
+}
+
+.mat-mdc-select {
+    color: #112350 !important;
+}
+
+::ng-deep .td-mat-select .mdc-text-field--no-label:not(.mdc-text-field--outlined):not(.mdc-text-field--textarea) .mat-mdc-form-field-infix {
+    padding-top: 4px !important;
+    padding-bottom: 6px !important;
+    overflow-y: hidden;
+
+}
+
+::ng-deep .mat-select {
+    height: 60px;
+    overflow-y: hidden;
+}
+
+::ng-deep .mdc-text-field--no-label:not(.mdc-text-field--outlined):not(.mdc-text-field--textarea) .mat-mdc-form-field-infix {
+    padding-top: 7px !important;
+    padding-bottom: 6px !important;
+    overflow-y: hidden;
+
+}
+
+::ng-deep .mat-mdc-select-value-tex {
+    font-family: 'Montserrat', sans-serif !important;
+    overflow-y: hidden;
+
+}
+
+::ng-deep .mdc-list-item__primary-text {
+    font-family: 'Montserrat', sans-serif !important;
+    overflow-y: hidden;
+
+    color: #607697;
+}
+
+/*Fin*/
+
+/*Estilos del radio button general*/
+.radio-group {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group label {
+    color: #112350;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.custom-radio {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    border: 2px solid #6F8BB5;
+    /* Borde negro por defecto */
+    position: relative;
+}
+
+.custom-radio::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="radio"]:checked+.custom-radio.yes::after {
+    background-color: #E76100;
+    /* Bolita naranja cuando está seleccionado */
+}
+
+input[type="radio"]:checked+.custom-radio.no::after {
+    background-color: #E76100;
+    /* Bolita naranja cuando está seleccionado */
+}
+
+input[type="radio"]:checked+.custom-radio.no {
+    border-color: #E76100;
+    /* Borde naranja cuando está seleccionado */
+}
+
+input[type="radio"]:checked+.custom-radio.yes {
+    border-color: #E76100;
+    /* Borde naranja cuando está seleccionado */
+}
+
+/* Estilos para los botones de radio deshabilitados */
+.radio-group label :disabled {
+    opacity: 30%;
+}
+
+.label-disabled {
+    opacity: 30%;
+}
+
+input[type="radio"]:disabled+.custom-radio {
+    opacity: 30%;
+}
+
+/*Fin*/
+
+.mat-inut-search {
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: currentColor;
+    outline: none;
+    background-color: var(--mat-select-panel-background-color);
+    padding: 0 44px 0 16px;
+    height: calc(3em - 1px);
+    line-height: calc(3em - 1px);
+    border-bottom: 2px solid #C4C5C7;
+}
+
+::ng-deep .mat-mdc-option {
+    padding: 0em !important;
+}
+
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-footer {
+    border-top: none !important;
+    margin-bottom: 40px;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    box-shadow: 1px 4px 6px #e5e5e5;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    font-size: 21px;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+}
+
+.form-control:disabled {
+    background-color: var(--bs-secondary-bg) !important;
+}
+
+.loader-container img {
+    width: 150px;
+    position: fixed;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+    z-index: 1000;
+    border-radius: 8px;
+}
+
+.loader-container p {
+    font-size: 16px;
+    color: #F87C22;
+    font-weight: 500;
+    position: fixed;
+    width: calc(100% - 48px);
+    text-align: center;
+    top: calc(50% + 48px);
+    left: 24px;
+    z-index: 1000;
+}
+
+.loader-container .loader-background {
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.hide {
+    display: none !important;
+}
+
+
+
+.alineacion-texto {
+    text-align: left !important;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.texto-title-msj {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #112350;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.texto-msj {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #607697;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+video {
+    width: 100% !important;
+    max-height: 110px !important;
+    max-width: 320px !important;
+}
+
+@media (max-width: 575.98px) {
+
+    .table-responsive-sm {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-responsive-sm>.table-bordered {
+        border: 0;
+    }
+
+    .containercard {
+        margin: 4% auto;
+    }
+
+    .my-3 {
+        margin-top: 0% !important;
+        margin-bottom: 0% !important;
+    }
+
+    .mt-4 {
+        margin-top: 0em !important;
+    }
+
+    .modal-detalle-auditoria .modal-content {
+        max-width: 580px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-detalle-auditoria .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-confirmacion .modal-content {
+        max-width: 420px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-confirmacion .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-de-notificacion .modal-content {
+        max-width: 420px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-notificacion .modal-dialog {
+        top: 150px;
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-de-eliminacion .modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-eliminacion .modal-dialog {
+        top: 80px;
+        /* Posición vertical centrada */
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-de-revisio-juridica .modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-revisio-juridica .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-detalle-liquidacion.modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-detalle-liquidacion .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-detalle-notificacion .modal-content {
+        max-width: 520px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-detalle-notificacion .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .mat-mdc-paginator-container {
+        flex-wrap: nowrap !important;
+    }
+
+    .mat-mdc-paginator-page-size {
+        margin-right: 0px !important;
+        width: 28% !important;
+        margin-top: 3%;
+    }
+
+    .mat-mdc-paginator-range-label {
+        margin: 0 15px 0 15px !important;
+    }
+
+    .mat-mdc-paginator-page-size-label {
+        display: none;
+    }
+
+    .modal-informationerror .modal-content {
+        max-width: 550px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-informationerror .modal-dialog {
+        top: 100px;
+        /* Posición vertical centrada */
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-centro-servicio .modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-centro-servicio .modal-dialog {
+        top: 90px;
+        /* Posición vertical centrada */
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-error-u .modal-content {
+        max-width: 550px !important;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-error-u .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-de-revisio-juridica-devuelto .modal-content {
+        width: 100% !important;
+        /* Ancho automático del contenido del modal */
+        margin-left: -0% !important;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-revisio-juridica-devuelto .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .table-responsive-md {
+        display: block;
+        width: 100%;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-responsive-md>.table-bordered {
+        border: 0;
+    }
+
+    .btn-primary-card {
+        font-size: 15px !important;
+    }
+
+    .container-4 input#search {
+        width: 70% !important;
+    }
+
+    .modal-detalle-auditoria .modal-content {
+        max-width: 580px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-detalle-auditoria .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-confirmacion .modal-content {
+        max-width: 420px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-confirmacion .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-notificacion .modal-content {
+        max-width: 420px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-notificacion .modal-dialog {
+        top: 150px;
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-eliminacion .modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-eliminacion .modal-dialog {
+        top: 80px;
+        /* Posición vertical centrada */
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-de-revisio-juridica .modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-revisio-juridica .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-detalle-liquidacion.modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-detalle-liquidacion .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-detalle-notificacion .modal-content {
+        max-width: 520px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-detalle-notificacion .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .mat-mdc-paginator-page-size-label {
+        display: none;
+    }
+
+    .mat-mdc-paginator-container {
+        flex-wrap: nowrap !important;
+    }
+
+    .mat-mdc-paginator-range-label {
+        margin: 0 15px 0 15px !important;
+    }
+
+    .modal-informationerror .modal-content {
+        max-width: 550px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-informationerror .modal-dialog {
+        top: 100px;
+        /* Posición vertical centrada */
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-centro-servicio .modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-centro-servicio .modal-dialog {
+        top: 90px;
+        /* Posición vertical centrada */
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-error-u .modal-content {
+        max-width: 550px !important;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-error-u .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-de-revisio-juridica-devuelto .modal-content {
+        width: 100% !important;
+        /* Ancho automático del contenido del modal */
+        margin-left: 0% !important;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-revisio-juridica-devuelto .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+}
+
+@media (max-width: 991.98px) {
+    .table-responsive-lg {
+        display: block;
+        width: 100%;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-responsive-lg>.table-bordered {
+        border: 0;
+    }
+
+    .width-component {
+        width: 100% !important;
+    }
+
+    .container-4 input#search {
+        width: 70% !important;
+    }
+
+    .modal-detalle-auditoria .modal-content {
+        max-width: 580px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-detalle-auditoria .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-confirmacion .modal-content {
+        max-width: 420px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-confirmacion .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-notificacion .modal-content {
+        max-width: 420px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-notificacion .modal-dialog {
+        top: 150px;
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-eliminacion .modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-eliminacion .modal-dialog {
+        top: 80px;
+        /* Posición vertical centrada */
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-revisio-juridica .modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-revisio-juridica .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-detalle-liquidacion.modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-detalle-liquidacion .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-detalle-notificacion .modal-content {
+        max-width: 520px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-detalle-notificacion .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .mat-mdc-paginator-page-size-label {
+        display: none;
+    }
+
+    .mat-mdc-paginator-container {
+        flex-wrap: nowrap !important;
+    }
+
+    .mat-mdc-paginator-range-label {
+        margin: 0 15px 0 15px !important;
+    }
+
+    .mat-mdc-paginator-page-size {
+        width: 26% !important;
+    }
+
+    .modal-informationerror .modal-content {
+        max-width: 550px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-informationerror .modal-dialog {
+        top: 100px;
+        /* Posición vertical centrada */
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-centro-servicio .modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-centro-servicio .modal-dialog {
+        top: 90px;
+        /* Posición vertical centrada */
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-error-u .modal-content {
+        max-width: 550px !important;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-error-u .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-de-revisio-juridica-devuelto .modal-content {
+        width: 100% !important;
+        /* Ancho automático del contenido del modal */
+        margin-left: 0% !important;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-revisio-juridica-devuelto .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+}
+
+@media (max-width: 1199.98px) {
+
+    .mat-mdc-paginator-page-size-label {
+        display: none;
+    }
+
+    .mat-mdc-paginator-container {
+        flex-wrap: nowrap !important;
+    }
+
+    .mat-mdc-paginator-range-label {
+        margin: 0 15px 0 15px !important;
+    }
+
+    .table-responsive-xl {
+        display: block;
+        width: 100%;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-responsive-xl>.table-bordered {
+        border: 0;
+    }
+
+    .modal-detalle-auditoria .modal-content {
+        max-width: 580px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-detalle-auditoria .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-confirmacion .modal-content {
+        max-width: 420px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-confirmacion .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-notificacion .modal-content {
+        max-width: 420px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-notificacion .modal-dialog {
+        top: 150px;
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-eliminacion .modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-eliminacion .modal-dialog {
+        top: 80px;
+        /* Posición vertical centrada */
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-revisio-juridica .modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-revisio-juridica .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-detalle-liquidacion .modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-detalle-liquidacion .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-detalle-notificacion .modal-content {
+        max-width: 520px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-detalle-notificacion .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-informationerror .modal-content {
+        max-width: 550px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-informationerror .modal-dialog {
+        top: 100px;
+        /* Posición vertical centrada */
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-centro-servicio .modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-centro-servicio .modal-dialog {
+        top: 90px;
+        /* Posición vertical centrada */
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-error-u .modal-content {
+        max-width: 550px !important;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-error-u .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-de-revisio-juridica-devuelto .modal-content {
+        width: 110%;
+        /* Ancho automático del contenido del modal */
+        margin-left: -5%;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-revisio-juridica-devuelto .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1280px !important;
+    }
+
+    .modal-detalle-auditoria .modal-content {
+        max-width: 580px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-detalle-auditoria .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-confirmacion .modal-content {
+        max-width: 420px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-confirmacion .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-notificacion .modal-content {
+        max-width: 420px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-notificacion .modal-dialog {
+        top: 150px;
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-eliminacion .modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-eliminacion .modal-dialog {
+        top: 80px;
+        /* Posición vertical centrada */
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-revisio-juridica .modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-revisio-juridica .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-detalle-liquidacion .modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-detalle-liquidacion .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-detalle-notificacion .modal-content {
+        max-width: 570px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-detalle-notificacion .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-informationerror .modal-content {
+        max-width: 550px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-informationerror .modal-dialog {
+        top: 100px;
+        /* Posición vertical centrada */
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-de-centro-servicio .modal-content {
+        max-width: 500px;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-centro-servicio .modal-dialog {
+        top: 90px;
+        /* Posición vertical centrada */
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+
+    }
+
+    .modal-error-u .modal-content {
+        max-width: 550px !important;
+        /* Ancho máximo del contenido del modal */
+        width: auto;
+        /* Ancho automático del contenido del modal */
+        margin: 0 auto;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-error-u .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+    .modal-de-revisio-juridica-devuelto .modal-content {
+        width: 110% !important;
+        /* Ancho automático del contenido del modal */
+        margin-left: -5% !important;
+        /* Centrar el modal horizontalmente */
+    }
+
+    .modal-de-revisio-juridica-devuelto .modal-dialog {
+        transform: translateY(-50%);
+        /* Ajustar verticalmente para centrar */
+    }
+
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

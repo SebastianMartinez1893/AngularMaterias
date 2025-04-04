@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap');
+
+.text-activo{
+    font-size: 14px !important;
+    line-height: 27.07px !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.modal-header{
+    display: block !important;
+}
+
+h2{
+    margin-left : 60px;
+    margin-bottom: 0px !important;
+    font-size: 20px;
+    line-height: 24.38px;
+    color: #E76100;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500;
+}
+
+.texto-uno{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #112350;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.texto-dos{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #E76100;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.texto-tres{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #112350;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.texto-cuatro{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #607697;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.texto-cinco{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #1A1731;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.texto-seis{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #607697;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.texto-siete{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #282A5C;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.texto-ocho{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #B6CDE2;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.texto-nueve{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.63px;
+    color: #607697;
+    font-family: 'Montserrat', sans-serif !important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.texto-dies{
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 14.63px;
+    color: #607697;
+    font-family: 'Montserrat', sans-serif !important;
+    text-decoration: underline;
+}
+
+.texto-once{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: #E76100;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.input-textarea{
+    height: 120px;
+    margin-top: 21px;
+    box-shadow: 0.5px 0px 0.5px 0.5px #C4C5C7 !important;
+}
+
+.cursor-pointer-delete-file{
+    cursor: pointer;
+}
+
+.text-left-file{
+    text-align: left;
+}
+
+.espacios-laterales-div{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.padding-col-right{
+    padding-right: calc(var(--bs-gutter-x)* 0.5);
+}
+
+
+.padding-col-left{
+    padding-top: 0px;
+    padding-left: calc(var(--bs-gutter-x)* 0.5);
+}
+
+.padding-col-text-left{
+    padding-left: calc(var(--bs-gutter-x)* 0.5);
+}
+
+.form-control{
+    border-color: #B6CDE2;
+    box-shadow: none !important;
+}
+
+.margin-top-row{
+    margin-top: -20px !important;
+}
+
+.width-col-3{
+    width: 25%;
+}
+
+.width-col-9{
+    width: 75%;
+}
+
+.width-col-2{
+    width: 16.66666667%;
+}
+
+.width-col-10{
+    width: 83.33333333%;
+}
+
+::ng-deep .cdk-overlay-container {
+    z-index: 9999 !important;
+    overflow-y: hidden;
+
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before  {
+    background-color: white;
+    overflow-y: hidden;
+
+ }
+ ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before {
+    border-bottom-color: white;
+    overflow-y: hidden;
+
+ }
+ 
+ ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: transparent !important;
+    border: 1px solid #B6CDE2;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    overflow-y: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 450;
+ 
+ }
+ 
+ .mat-mdc-option{
+    border-bottom: 1px solid #dcdcdc !important; /* Línea divisora */;
+
+}
+
+::ng-deep .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text{
+    color: black !important;
+    border:2rem;
+    font-weight: 450;
+    overflow-y: hidden;
+
+}
+
+::ng-deep .mat-primary .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-minimal::after, .mat-primary .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-minimal::after{
+    color: transparent !important;
+    font-weight: 500;
+    align-items: left;
+    overflow-y: hidden;
+}
+
+
+.mat-mdc-checkbox {
+    --mdc-checkbox-state-layer-size: 16px;
+
+    &.mat-accent {
+        --mdc-checkbox-selected-focus-icon-color: #F87C22 !important;
+        --mdc-checkbox-selected-hover-icon-color: #F87C22 !important;
+        --mdc-checkbox-selected-icon-color: #F87C22 !important;
+        --mdc-checkbox-selected-pressed-icon-color: #2E2E38 !important;
+    }
+    overflow-y: hidden;
+}
+
+::ng-deep .mat-mdc-form-field.mat-focused .mat-mdc-select-arrow {
+    color: black !important;
+    overflow-y: hidden;
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-floating-label, .mdc-text-field--filled:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-floating-label--float-above{
+    color: black !important;
+    overflow-y: hidden;
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after{
+    color: black !important;
+    overflow-y: hidden;
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after{
+    border-bottom-color: #F87C22 !important;
+    overflow-y: hidden;
+}
+
+.mat-select {
+    width: 100% !important;
+    margin-top: 0.5rem;
+    color: #607697;
+    overflow-x: hidden; 
+}
+
+.input-select{
+    width: 80% !important;
+    overflow-y: hidden;
+}
+
+.aling-text-information{
+    text-align: left !important;
+    overflow-y: hidden;
+}
+
+.select-tipos{
+    margin-top: 1rem;
+    width: 90% !important;
+    background-color: transparent;
+    font-size: 0.5rem;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.mat-select-panel {
+    overflow-y: hidden !important;
+}  
+
+::ng-deep .mat-option{
+    border-bottom: 0.01px solid #a4b5ce;
+    width: 90%;
+    margin-left: 1rem;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    align-content: center;
+}
+
+.tipos{
+    width: 1rem !important;
+    font-size: 0.3rem;
+}
+
+.td-mat-select{
+    width: 66% !important;
+    display: flex !important;
+    text-align: center !important;
+    height: 70px !important;
+    padding-top: 18px !important;
+}
+
+::ng-deep .mat-primary .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-full, .mat-primary .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-full{
+    background: #F87C22 !important;
+    overflow-y: hidden;
+
+}
+::ng-deep .mat-mdc-option{
+    border: 10px;
+    overflow-y: hidden;
+}
+
+
+::ng-deep  .div.mat-mdc-select-panel .mat-mdc-option{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 450;
+    border: #1A1731;  
+      overflow-y: hidden;
+ }
+
+
+::ng-deep .td-mat-select .mdc-text-field--no-label:not(.mdc-text-field--outlined):not(.mdc-text-field--textarea) .mat-mdc-form-field-infix{
+    padding-top: 4px !important;
+    padding-bottom: 6px !important;
+    overflow-y: hidden;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-field {
+    height: 25px;
+    width: 100%;
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Montserrat', sans-serif;
+}  
+    
+::ng-deep .mat-select {
+    height: 60px;
+    overflow-y: hidden;
+}
+
+::ng-deep .mdc-text-field--no-label:not(.mdc-text-field--outlined):not(.mdc-text-field--textarea) .mat-mdc-form-field-infix{
+    padding-top: 7px !important;
+    padding-bottom: 6px !important;
+    overflow-y: hidden;
+
+}
+
+::ng-deep .mat-mdc-select-value-tex{
+    font-family: 'Montserrat', sans-serif !important;
+    overflow-y: hidden;
+
+}
+
+::ng-deep .mdc-list-item__primary-text{
+    font-family: 'Montserrat', sans-serif !important;
+    overflow-y: hidden;
+    color:#607697 ;
+}
+
+::ng-deep .mat-mdc-select-value-text{
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 15px;
+    line-height: 17.07px;
+    color: #112350 !important;
+    font-weight: 500;
+}
+
+.file-upload-container {
+    border: 1px solid #B6CDE2;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#fileInput {
+    display: none;
+}
+
+.button-cancelar{
+    border-radius: 24px;
+    border-color: #E76100;
+    width: 17% !important;
+    color: #E76100 !important;
+    background: #fff !important;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+.button-guardar{
+    border-radius: 24px;
+    border-color: #E76100;
+    width: 17% !important;
+    color: #fff;
+    background: #E76100 !important;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.btn-secondary-card{
+    width: 17% !important;
+}
+
+::ng-deep .mat-mdc-option .mdc-list-item__primary-text{
+    width: 100% !important;
+}
+
+.btn-secondary-card{
+    margin-top: 0em !important;
+    margin-bottom: 0em !important;
+}
+
+@media (max-width: 991.98px) {
+
+    .espacios-laterales-div{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .padding-col-right{
+        padding-right: 0px !important;
+    }
+    
+    .padding-col-left{
+        padding-top: 10px !important;
+        padding-left: 0px !important;
+    }
+
+    .padding-col-text-left{
+        padding-left: 20px !important;
+    }
+    
+    .button-cancelar{
+        width: 30% !important;
+    }
+    
+    .button-guardar{
+        width: 30% !important;
+    }
+
+    .btn-secondary-card{
+        width: 30% !important;
+    }
+
+    .width-col-3{
+        width: 30% !important;
+    }
+    
+    .width-col-9{
+        width: 70% !important;
+    }
+
+    .width-col-2{
+        width: 21% !important;
+    }
+    
+    .width-col-10{
+        width: 79% !important;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+
+    .espacios-laterales-div{
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+    }
+    
+    .padding-col-right{
+        padding-right: calc(var(--bs-gutter-x)* 0.5) !important;
+    }
+
+    .padding-col-left{
+        padding-top: 0px !important;
+        padding-left: calc(var(--bs-gutter-x)* 0.5) !important;
+    }
+
+    .padding-col-text-left{
+        padding-left: calc(var(--bs-gutter-x)* 0.5) !important;
+    }
+    
+    .button-cancelar{
+        width: 30% !important;
+    }
+    .button-guardar{
+        width: 30% !important;
+    }
+
+    .btn-secondary-card{
+        width: 30% !important;
+    }
+
+    .width-col-3{
+        width: 50% !important;
+    }
+    
+    .width-col-9{
+        width: 50% !important;
+    }
+
+    .width-col-2{
+        width: 16.66666667% !important;
+    }
+    
+    .width-col-10{
+        width: 83.33333333% !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .espacios-laterales-div{
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+    }
+
+    .padding-col-right{
+        padding-right: calc(var(--bs-gutter-x)* 0.5) !important;
+    }
+
+    .padding-col-left{
+        padding-top: 0px !important;
+        padding-left: calc(var(--bs-gutter-x)* 0.5) !important;
+    }
+
+    .padding-col-text-left{
+        padding-left: calc(var(--bs-gutter-x)* 0.5) !important;
+    }
+
+    .button-cancelar{
+        width: 30% !important;
+    }
+
+    .button-guardar{
+        width: 30% !important;
+    }    
+    
+    .btn-secondary-card{
+        width: 30% !important;
+    }
+
+    .width-col-3{
+        width: 50% !important;
+    }
+    
+    .width-col-9{
+        width: 50% !important;
+    }
+
+    .width-col-2{
+        width: 16.66666667% !important;
+    }
+    
+    .width-col-10{
+        width: 83.33333333% !important;
+    }
+}

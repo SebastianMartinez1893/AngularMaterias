@@ -1,0 +1,84 @@
+<div class="container-fluid">
+    <div class="row align-items-center bs-login alt-bslogin">
+      <div class="col-md-6 d-none d-lg-block loginImage"></div>
+      <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 pt-5">
+        <div class="form-login-content">
+          <div class="login-title">
+            <h1>Bienvenido, Ingrese tus datos</h1>
+          </div>
+          <div class="content-input whit-icon input-login">
+            <label for="name" class="form-label"> Nombre 
+              <span class="help">
+                <img src="../../../assets/images/icon-ayuda.svg" alt="">
+              </span>
+            </label>
+  
+            <div class="input-group">
+              <input [(ngModel)]="text_nombre" type="text" id="name" placeholder="Nombre" class="form-control">
+            </div>
+          </div>
+  
+          <div class="content-input whit-icon input-login">
+            <label for="apellido" class="form-label"> Apellido </label>
+            <div class="input-group">
+              <input [(ngModel)]="text_apellido" type="text" id="apellido" placeholder="Apellido" class="form-control">
+            </div>
+          </div>
+          
+          <div class="content-input whit-icon input-login">
+            <label for="Identificacion" class="form-label"> Identificacion </label>
+            <div class="input-group">
+              <input [(ngModel)]="text_Identificacion" type="number" id="Identificacion" placeholder="Identificacion" class="form-control">
+            </div>
+          </div>
+          
+          <div class="content-input whit-icon input-login">
+            <label for="celular" class="form-label"> Celular </label>
+            <div class="input-group">
+              <input [(ngModel)]="text_celular" type="number" id="celular" placeholder="Celular" class="form-control">
+            </div>
+          </div>
+          
+          <div class="content-input whit-icon input-login">
+            <label for="email" class="form-label"> Email </label>
+            <div class="input-group">
+              <input [(ngModel)]="text_email" type="text" id="email" placeholder="Email" class="form-control">
+            </div>
+          </div>
+  
+          <div class="content-input whit-icon input-login">
+            <label for="passwordLogin" class="form-label"> Contraseña </label>
+            <div class="input-group">
+              <input [(ngModel)]="text_password" type="password" id="passwordLogin" placeholder="Contraseña" class="form-control">
+            </div>
+          </div>
+          <div class="content-input whit-icon input-login">
+            <label for="Rol" class="form-label"> Rol </label>
+            <div class="input-group">
+                <select class="form-control" [(ngModel)]="rol_Id">
+                <option *ngFor="let rol of opciones_roles" [value]="rol.Id" >
+                  {{rol.descripcion}}
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12 col-12">
+  
+          <div class="action mt-3">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <button class="btn button-cancelar bs-btn w-100" id="botonLogin" [routerLink]="['../Login']"> Cancelar </button>
+                </div>
+                <div class="col-md-6 col-12">
+                    <button class="btn button-login bs-btn w-100" id="botonLogin" (click)="RegistroUsuarios()"> 
+                        Guardar 
+                    </button>
+                </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

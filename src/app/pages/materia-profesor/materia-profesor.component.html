@@ -1,0 +1,12 @@
+<app-encabezado></app-encabezado>
+<div class="container" style="justify-content: center;">
+    <div class="row">
+        <div class="col-md-12">
+            <app-table-dinamico
+            (_datoEvento)="AsignacionMateria($event)"
+            (_datoEliminar)="EliminarMateria($event)"
+            (_datoConsulta)="VisualizarIdMateria($event)">  >                
+            </app-table-dinamico>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+.button-confirmacion{
+    border-radius: 24px;
+    border-color: #E76100;
+    width: 100% !important;
+    color: #fff;
+    background: #E76100 !important;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.button-cancelar{
+    border-radius: 24px;
+    border-color: #E76100;
+    width: 100% !important;
+    color: #E76100 !important;
+    background: #fff !important;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.texto-uno{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #607697;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+@media (max-width: 500) {
+
+    .button-confirmacion{
+        width: 30% !important;
+    }
+}
+
+/* Ajustes generales para el modal en pantallas pequeñas */
+@media (max-width: 400px) {
+    .modal-dialog {
+      max-width: 100% !important; /* Asegúrate de que el modal ocupe el 100% del ancho en pantallas pequeñas */
+      margin: 10px; /* Margen para evitar que toque los bordes */
+    }
+  
+    /* Si hay un botón o grupo de botones específicos que quieres ajustar */
+    .modal-footer .modal-footer .button-confirmacion {
+      width: 33% !important;/* Cambia el tamaño de la fuente en botones */
+    }
+}
+  

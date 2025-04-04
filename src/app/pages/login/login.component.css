@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap');
+
+h1{
+    font-size: 24px;
+    font-weight: 500;
+    color: #1A1731;
+    margin: 20px 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+p{
+    font-size: 16px;
+    color: #607697 !important;
+    margin-top: 0px;
+    font-weight: 400;
+    margin: 20px 0px;
+    line-height: 24px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.container .bs-login, .container-fluid .bs-login {
+    background: #EEF2FB;
+    padding: 0px;
+}
+
+.loginImage {
+    left: 0;
+    height: 92vh;
+    background-image: url('https://apitesting.interrapidisimo.co/SitioLogin/hero-login-2.3ed1f3140e4cf398.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+
+.form-login-content {
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+.logo-login-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-login {
+    width: 100%;
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-input {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.input-group-text {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.input-group input {
+    border-left: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.form-label {
+    font-size: 14px;
+    color: #607697;
+}
+
+.action .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.button-login {
+    border-radius: 24px;
+    border-color: #E76100;
+    width: 100% !important;
+    color: #fff;
+    background: #E76100 !important;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.button-login-disabled {
+    border-radius: 24px;
+    border-color: #B6CDE2 !important;
+    width: 100% !important;
+    color: #fff;
+    background: #B6CDE2 !important;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+@media (max-width: 992px) {
+    .loginImage {
+        display: none;
+    }
+}

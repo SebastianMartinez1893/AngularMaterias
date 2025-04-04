@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap');
+
+.titulob{
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    padding-top:0.2rem;
+    margin: 0.2rem;
+    color: #607697;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word
+}
+
+.row1{
+    max-width: 100%;
+    justify-content:center;
+    margin-left:3.5rem;
+    margin-right: 3.5rem;
+    flex-wrap: wrap;
+}
+
+.container{
+    align-items: center;
+}
+
+.card{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 18px;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card-bottom{
+    margin-bottom: 1.8em;
+}
+
+.containercard{
+    max-width: 200px;
+    flex-direction: column;
+}
+
+.doc{
+    margin: 0.01rem;
+    width: 41px;
+    height: 41px;
+}
+
+@media screen and (max-width: 900px) {
+    .bread {
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 767.98px) {  
+    .titulob{
+        font-size: 16px !important;
+    }
+
+    .width-img-inventario{
+        width: 30% !important;
+    }
+
+    .width-img-auditoria{
+        width: 40% !important;
+    }
+
+    .width-img-investigacion{
+        width: 40% !important;
+    }
+
+    .width-img-pago{
+        width: 40% !important;
+    }
+
+    .width-img-notificacion{
+        width: 60% !important;
+    }
+} 

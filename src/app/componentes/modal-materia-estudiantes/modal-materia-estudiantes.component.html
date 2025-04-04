@@ -1,0 +1,26 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <div class="row mb-4 justify-content-center align-items-center justify-component">
+            <div class="col-md-11 col-11 d-flex justify-content-center align-items-center">
+                <h2>
+                    Estudiantes de esta materia
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="justify-content: center;">
+        <div class="row">
+            <div class="col-md-12">
+                <app-table-dinamico></app-table-dinamico>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button (click)="onConfirm(false)" class="btn button-cancelar bs-btn">Cancelar</button>
+        <button 
+            (click)="onConfirm(true)" 
+            class="btn button-guardar bs-btn" >
+            Guardar
+        </button>
+    </div>
+</div>
