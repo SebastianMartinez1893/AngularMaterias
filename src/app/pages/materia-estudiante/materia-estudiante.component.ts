@@ -63,8 +63,8 @@ export class MateriaEstudianteComponent implements OnInit {
               // Llama los métodos de consumo y asignación de datos apra la grilla
               this.PintarTabla(this.listadetalleTmp);
   
-               console.log("respuesta");
-              console.log(datos);
+               //console.log("respuesta");
+              //console.log(datos);
             }
             else {
               // const modalRefRegister = this.ModalConfirmation("info", respuestaApi.mensaje);

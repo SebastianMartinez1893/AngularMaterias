@@ -76,7 +76,7 @@ export class RegistroComponent {
        this.UsuarioService.RegistroUsuario(body)
        .then((respuestaApi: RespuestaUsuario | undefined) => {
          if (respuestaApi) {
-          console.log(respuestaApi);
+          //console.log(respuestaApi);
            if (respuestaApi.codigoEstado == HttpStatusCode.Ok) {
             let datos = respuestaApi.valores
               //  Redireccionar al componente 'pages/home'

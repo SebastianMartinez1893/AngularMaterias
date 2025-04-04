@@ -1,12 +1,10 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { lista_IndicePaginador } from '../../../environments/environment';
-import { TableDinamicoService } from '../table-dinamico/table-dinamico.service';
-import { CrudMaestroProfesor } from '../../swagger/ApiMateriasProfesor/parametros/CrudMaestroProfesor';
-import { RespuestaApi } from '../../swagger/ApiMateriasProfesor/models/RespuestaApi';
 import { HttpStatusCode } from '@angular/common/http';
 import { ApiMateriaEstudianteService } from '../../services/ApiMateriaEstudiante.service';
 import { CrudMateriaEstudiante } from '../../swagger/ApiMateriaEstudiante/parametros/CrudMateriaEstudiante';
 import { ResponseApiestudiante } from '../../swagger/ApiMateriaEstudiante/models/ResponseApiEstudiante';
+import { TableDinamicoModalService } from '../table-dinamico-modal/table-dinamico-modal.service';
 
 @Component({
   selector: 'app-modal-materia-estudiantes',
@@ -16,7 +14,7 @@ import { ResponseApiestudiante } from '../../swagger/ApiMateriaEstudiante/models
 export class ModalMateriaEstudiantesComponent  implements OnInit{
 
 constructor(
-  private tablaDinamicMateriaEstudiantes : TableDinamicoService,
+  private tablaDinamicMateriaEstudiantes : TableDinamicoModalService,
   private apiServiceMateriaEstudiante : ApiMateriaEstudianteService
 
 ){}
@@ -49,6 +47,8 @@ constructor(
      this.IdMateria = this._datosdetalle.idMateria;
      console.log("IdMateria");
      console.log(this.IdMateria)
+     console.log("IdUsuario");
+     console.log(IdUsuario);
     let crud : CrudMateriaEstudiante = {
       idMateria : this.IdMateria,
       idProfesor : IdUsuario
@@ -69,10 +69,12 @@ constructor(
                   let datos : any =  respuestaApi.valores;
                   this.totalRegistro = datos.lenght;
                 this.listadetalleTmp = datos;
+                console.log("Listadetalle");
+                console.log(this.listadetalleTmp);
                 this.PintarTabla(this.listadetalleTmp);
   
-                  //console.log("respuesta");
-                  //console.log(datos);
+                  // console.log("respuesta");
+                  // console.log(datos);
                 }
                 else{
                   // const modalRefRegister = this.ModalConfirmation("info", respuestaApi.mensaje);
@@ -95,7 +97,7 @@ constructor(
     
     _arreglo.forEach((element : any) => {
       _body.push({          
-        Materia : element.NombreEstudiante
+        nombreEstudiante : element.nombreEstudiante,
       });
     });
 
@@ -106,7 +108,7 @@ constructor(
       elimina_registro : false,
       aplica_edicion : false,
       header : [
-        {Titulo : "NombreEstudiante"}
+        {Titulo : "nombreEstudiante"}
       ],
       body : _body,
       currentPage : this.currentPage,

@@ -21,6 +21,7 @@ import { MateriaProfesorComponent } from './pages/materia-profesor/materia-profe
 import { MateriaEstudianteComponent } from './pages/materia-estudiante/materia-estudiante.component';
 import { TableDinamicoComponent } from './componentes/table-dinamico/table-dinamico.component';
 import { ModalMateriaEstudiantesComponent } from './componentes/modal-materia-estudiantes/modal-materia-estudiantes.component';
+import { TableDinamicoModalComponent } from './componentes/table-dinamico-modal/table-dinamico-modal.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { ModalMateriaEstudiantesComponent } from './componentes/modal-materia-es
     MateriaProfesorComponent,
     MateriaEstudianteComponent,
     TableDinamicoComponent,
-    ModalMateriaEstudiantesComponent
+    ModalMateriaEstudiantesComponent,
+    TableDinamicoModalComponent
   ],
   imports: [
     BrowserModule,

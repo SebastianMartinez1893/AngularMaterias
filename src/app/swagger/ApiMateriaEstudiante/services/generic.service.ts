@@ -34,7 +34,7 @@ export class GenericService extends BaseService{
 
         if (params) {
             rb.query('IdMateria', params.body?.idMateria);
-            rb.query('IdUsuarioProfesor', params.body?.idMateria);
+            rb.query('IdUsuarioProfesor', params.body?.idProfesor);
         }
         return this.http.request(rb.build({
             responseType: 'json',

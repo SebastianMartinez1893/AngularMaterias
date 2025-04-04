@@ -116,7 +116,7 @@ export class MateriaProfesorComponent implements OnInit {
 
   VisualizarIdMateria(datos: { _id: number; }) {
     // console.log("IdMateria");
-    console.log(datos._id);
+    //console.log(datos._id);
 
     const activeModal = this.modalService.open(ModalMateriaEstudiantesComponent, {
       size: 'lg',
