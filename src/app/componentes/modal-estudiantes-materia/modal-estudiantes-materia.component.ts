@@ -1,17 +1,17 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { lista_IndicePaginador } from '../../../environments/environment';
-import { HttpStatusCode } from '@angular/common/http';
-import { ApiMateriaEstudianteService } from '../../services/ApiMateriaEstudiante.service';
-import { CrudMateriaEstudiante } from '../../swagger/ApiMateriaEstudiante/parametros/CrudMateriaEstudiante';
-import { ResponseApiestudiante } from '../../swagger/ApiMateriaEstudiante/models/ResponseApiEstudiante';
 import { TableDinamicoModalService } from '../table-dinamico-modal/table-dinamico-modal.service';
+import { ApiMateriaEstudianteService } from '../../services/ApiMateriaEstudiante.service';
+import { CrudMateriaEstudianteProfesor } from '../../swagger/ApiMateriaEstudiante/parametros/CrudMateriaEstudianteProfesor';
+import { ResponseApiestudiante } from '../../swagger/ApiMateriaEstudiante/models/ResponseApiEstudiante';
+import { HttpStatusCode } from '@angular/common/http';
 
 @Component({
-  selector: 'app-modal-materia-estudiantes',
-  templateUrl: './modal-materia-estudiantes.component.html',
-  styleUrl: './modal-materia-estudiantes.component.css'
+  selector: 'app-modal-estudiantes-materia',
+  templateUrl: './modal-estudiantes-materia.component.html',
+  styleUrl: './modal-estudiantes-materia.component.css'
 })
-export class ModalMateriaEstudiantesComponent  implements OnInit{
+export class ModalEstudiantesMateriaComponent implements OnInit {
 
 constructor(
   private tablaDinamicMateriaEstudiantes : TableDinamicoModalService,
@@ -45,16 +45,18 @@ constructor(
      let Id = sessionStorage.getItem("Id_Usuario");
      let IdUsuario: number = Id !== null ? Number(Id) : 0;
      this.IdMateria = this._datosdetalle.idMateria;
-    let crud : CrudMateriaEstudiante = {
-      idMateria : this.IdMateria,
-      idProfesor : IdUsuario
+    let crud : CrudMateriaEstudianteProfesor = {
+      idMateriaProfesor : this.IdMateria,
+      IdUsuarioEstudiante :0,
+      activo : true,
+      opcion : 1
     }
     this.ListadoMaterias(crud)
   } 
    
-    ListadoMaterias(crud : CrudMateriaEstudiante)
+    ListadoMaterias(crud : CrudMateriaEstudianteProfesor)
     {
-        this.apiServiceMateriaEstudiante.GIUMateriaEstudiante(crud)
+        this.apiServiceMateriaEstudiante.GMateriaEstudiante(crud)
             .then((respuestaApi: ResponseApiestudiante | undefined) => {
               if (respuestaApi) {
                 if(respuestaApi.codigoEstado == HttpStatusCode.Ok){

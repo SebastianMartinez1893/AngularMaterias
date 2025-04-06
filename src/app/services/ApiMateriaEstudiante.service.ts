@@ -44,4 +44,22 @@ export class ApiMateriaEstudianteService {
                 });
         });
     }
+
+    
+    async GMateriaEstudiante(CrudMateriaEstudiante : CrudMateriaEstudianteProfesor): Promise<ResponseApiestudiante | undefined>{
+        return new Promise<ResponseApiestudiante | undefined>((resolve, reject) => {
+            this.genericServiceCloud.rootUrl = environment.url;
+            this.genericServiceCloud.Get$Json$Response$G$Materia$Estudiante({ body: CrudMateriaEstudiante })
+                .subscribe({
+                    next: (success: StrictHttpResponse<ResponseApiestudiante>) => {
+                        resolve(success.body);  // Resuelve la promesa con el body de la respuesta
+                    },
+                    error: (e) => {
+  
+                        reject(e);
+                    }
+                });
+        });
+    }
+
 }

@@ -74,4 +74,32 @@ export class GenericService extends BaseService{
         );
     }
 
+    // Método para obtener, insertar y actualizar las materias del profesor
+    static readonly ApiGMateriaEstudiante= '/MateriaEstudiante/EstudianteMateria';
+
+    Get$Json$Response$G$Materia$Estudiante(
+        params?: {
+           body?: CrudMateriaEstudianteProfesor
+        },
+        context?: HttpContext       
+    ): Observable<StrictHttpResponse<ResponseApiestudiante>> {
+
+        const rb = new RequestBuilder(this.rootUrl, GenericService.ApiGMateriaEstudiante, 'get');
+
+        if (params) {
+            rb.query('IdMateriaProfesor', params.body?.idMateriaProfesor);
+        }
+        return this.http.request(rb.build({
+            responseType: 'json',
+            accept: 'text/json',
+            context: context
+        })).pipe(
+            filter((r: any) => r instanceof HttpResponse),
+            map((r: HttpResponse<any>) => {
+                return r as StrictHttpResponse<ResponseApiestudiante>;
+            })
+        );
+    }
+
+
 }

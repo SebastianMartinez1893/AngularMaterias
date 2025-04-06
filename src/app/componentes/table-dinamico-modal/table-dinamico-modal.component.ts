@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { TableDinamicoService } from '../table-dinamico/table-dinamico.service';
+import { TableDinamicoModalService } from './table-dinamico-modal.service';
 
 @Component({
   selector: 'app-table-dinamico-modal',
@@ -28,7 +28,7 @@ export class TableDinamicoModalComponent implements OnInit{
 
   @Output() sortChange = new EventEmitter<{title : string, order : string, indice : number}>();
 
-  constructor(private tableService: TableDinamicoService) {}
+  constructor(private tableService: TableDinamicoModalService) {}
 
   ngOnInit() {
     // Se suscribe al observable para obtener los datos de la tabla.
