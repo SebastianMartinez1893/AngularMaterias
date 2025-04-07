@@ -14,10 +14,10 @@ export class HomeComponent implements OnInit {
     let rol = sessionStorage.getItem("Rol"); 
     if (rol=="1")
     {
-      this.route.navigate(['/MateriaProfesor']);
+      this.route.navigate(['/MateriaProfesor'], { skipLocationChange: true });
     }
     else{
-      this.route.navigate(['/MateriaEstudiante']);
+      this.route.navigate(['/MateriaEstudiante'], { skipLocationChange: true });
     }
   }
 

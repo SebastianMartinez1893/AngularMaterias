@@ -31,6 +31,7 @@ export class LoginComponent {
     this.UsuarioService.ObtenerDatosUsuario(this.text_email, this.text_pass)
     .then((respuestaApi: RespuestaUsuario | undefined) => {
       if (respuestaApi) {
+
         if(respuestaApi.codigoEstado == HttpStatusCode.Ok){
 
           let datos : any =  respuestaApi.valores;
@@ -42,7 +43,7 @@ export class LoginComponent {
           sessionStorage.setItem("NombreUsuario", datos.nombre);
           sessionStorage.setItem("Id_Usuario", datos.idUsuario);
           sessionStorage.setItem("Rol", datos.rolId);
-          this.route.navigate(['/Home']);
+          this.route.navigate(['/Home'], { skipLocationChange: true });
         }
         else{
           const modalRefRegister = this.ModalConfirmation("info", respuestaApi.mensaje);
@@ -54,7 +55,8 @@ export class LoginComponent {
       }
     })
     .catch((error) => {
-      console.error("Error al obtener la información de la guía:", error);
+      this.VisualizacionModalInformativo();
+      console.error("Error al comunicar con el servicio:", error);
     })
 
   }

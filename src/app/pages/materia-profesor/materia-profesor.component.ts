@@ -65,7 +65,7 @@ export class MateriaProfesorComponent implements OnInit, PipeTransform {
           if (respuestaApi.codigoEstado == HttpStatusCode.Ok) {
 
             let datos: any = respuestaApi.valores;
-            console.log(datos);
+           // console.log(datos);
             this.MateriasAsignadas = this.transform(datos)
             this.totalRegistro = datos.lenght;
             this.listadetalleTmp = datos;

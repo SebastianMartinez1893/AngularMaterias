@@ -79,7 +79,7 @@ export class RegistroComponent {
            if (respuestaApi.codigoEstado == HttpStatusCode.Ok) {
             let datos = respuestaApi.valores
               //  Redireccionar al componente 'pages/home'
-               this.route.navigate(['/Home']);
+               this.route.navigate(['/Home'], { skipLocationChange: true });
                sessionStorage.setItem("Email", this.text_email);
                sessionStorage.setItem("Password", this.text_password); 
                sessionStorage.setItem("Registro", "true"); 

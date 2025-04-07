@@ -52,6 +52,6 @@ cerrarSesion() {
   sessionStorage.removeItem("Email");
   sessionStorage.removeItem("Password");
   sessionStorage.removeItem("Registro");
-  this.route.navigate(['/Login']);
+  this.route.navigate(['/AsignacionMaterias'], { skipLocationChange: true });
 }
 }
